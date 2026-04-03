@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redwood Studios</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-texture"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="logo.png" alt="Redwood Studios">
+      <span>REDWOOD <span class="brand-highlight">STUDIOS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <button class="mobile-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">System Operational</div>
+        <h1>WE SET<br><span class="highlight">THE PACE.</span></h1>
+        <p class="hero-subtitle">We don't follow the trend — we start the conversation.</p>
+        <p class="hero-tagline">Viral games. Bold ideas. Community that plays loud.</p>
+        <div class="hero-buttons">
+          <a href="games.html" class="btn-primary">Play Our Games &rarr;</a>
+          <a href="contact.html" class="btn-outline">Partner With Us</a>
+        </div>
+      </div>
+
+      <!-- 3D Card Carousel -->
+      <div class="hero-carousel" aria-label="Featured games showcase">
+        <div class="carousel-stage">
+          <div class="carousel-card active" data-index="0">
+            <img src="thumb1.png" alt="Game 1">
+            <div class="carousel-card-info">
+              <div class="carousel-card-name">Moon Incremental</div>
+              <div class="carousel-card-sub">1.7k Playing</div>
+            </div>
+          </div>
+          <div class="carousel-card" data-index="1">
+            <img src="thumb2.png" alt="Game 2">
+            <div class="carousel-card-info">
+              <div class="carousel-card-name">Stadium Simulator 2</div>
+              <div class="carousel-card-sub">332 Playing</div>
+            </div>
+          </div>
+          <div class="carousel-card" data-index="2">
+            <img src="thumb3.png" alt="Game 3">
+            <div class="carousel-card-info">
+              <div class="carousel-card-name">Train Race</div>
+              <div class="carousel-card-sub">120 Playing</div>
+            </div>
+          </div>
+          <div class="carousel-card" data-index="3">
+            <img src="thumb4.png" alt="Game 4">
+            <div class="carousel-card-info">
+              <div class="carousel-card-name">Production Tycoon</div>
+              <div class="carousel-card-sub">41 Playing</div>
+            </div>
+          </div>
+          <div class="carousel-card" data-index="4">
+            <img src="thumb5.png" alt="Game 5">
+            <div class="carousel-card-info">
+              <div class="carousel-card-name">Cart Ride RNG</div>
+              <div class="carousel-card-sub">31 Playing</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-goto="0"></button>
+          <button class="carousel-dot" data-goto="1"></button>
+          <button class="carousel-dot" data-goto="2"></button>
+          <button class="carousel-dot" data-goto="3"></button>
+          <button class="carousel-dot" data-goto="4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Lifetime Visits
+        </div>
+        <div class="stat-value"><span class="counter" data-target="7.8" data-suffix="M+" data-decimals="1">0</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Active CCU
+        </div>
+        <div class="stat-value"><span class="counter" data-target="2256">0</span></div>
+        <div class="stat-live">Live</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Total Games
+        </div>
+        <div class="stat-value"><span class="counter" data-target="8">0</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+          Likes
+        </div>
+        <div class="stat-value"><span class="counter" data-target="50" data-suffix="K+">0</span></div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Favourites
+        </div>
+        <div class="stat-value"><span class="counter" data-target="100" data-suffix="K+">0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3D Marquee Showcase -->
+  <section class="marquee-section">
+    <div class="marquee-fade-left"></div>
+    <div class="marquee-fade-right"></div>
+    <div class="marquee-wrapper">
+      <!-- Row 1 -->
+      <div class="marquee-track">
+        <div class="marquee-card"><img src="thumb1.png" alt="Game 1"><div class="m-overlay"><div class="m-name">Game Title 1</div><div class="m-stats"><span class="active-dot"></span> 211.5K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb2.png" alt="Game 2"><div class="m-overlay"><div class="m-name">Game Title 2</div><div class="m-stats"><span class="active-dot"></span> 10.4K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb3.png" alt="Game 3"><div class="m-overlay"><div class="m-name">Game Title 3</div><div class="m-stats"><span class="active-dot"></span> 3.7K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb4.png" alt="Game 4"><div class="m-overlay"><div class="m-name">Game Title 4</div><div class="m-stats"><span class="active-dot"></span> 2.8K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb5.png" alt="Game 5"><div class="m-overlay"><div class="m-name">Game Title 5</div><div class="m-stats"><span class="active-dot"></span> 2.4K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb6.png" alt="Game 6"><div class="m-overlay"><div class="m-name">Game Title 6</div><div class="m-stats"><span class="active-dot"></span> 2.1K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb7.png" alt="Game 7"><div class="m-overlay"><div class="m-name">Game Title 7</div><div class="m-stats"><span class="active-dot"></span> 1.2K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb8.png" alt="Game 8"><div class="m-overlay"><div class="m-name">Game Title 8</div><div class="m-stats"><span class="active-dot"></span> 977 Playing</div></div></div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-card"><img src="thumb1.png" alt="Game 1"><div class="m-overlay"><div class="m-name">Game Title 1</div><div class="m-stats"><span class="active-dot"></span> 211.5K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb2.png" alt="Game 2"><div class="m-overlay"><div class="m-name">Game Title 2</div><div class="m-stats"><span class="active-dot"></span> 10.4K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb3.png" alt="Game 3"><div class="m-overlay"><div class="m-name">Game Title 3</div><div class="m-stats"><span class="active-dot"></span> 3.7K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb4.png" alt="Game 4"><div class="m-overlay"><div class="m-name">Game Title 4</div><div class="m-stats"><span class="active-dot"></span> 2.8K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb5.png" alt="Game 5"><div class="m-overlay"><div class="m-name">Game Title 5</div><div class="m-stats"><span class="active-dot"></span> 2.4K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb6.png" alt="Game 6"><div class="m-overlay"><div class="m-name">Game Title 6</div><div class="m-stats"><span class="active-dot"></span> 2.1K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb7.png" alt="Game 7"><div class="m-overlay"><div class="m-name">Game Title 7</div><div class="m-stats"><span class="active-dot"></span> 1.2K Playing</div></div></div>
+        <div class="marquee-card"><img src="thumb8.png" alt="Game 8"><div class="m-overlay"><div class="m-name">Game Title 8</div><div class="m-stats"><span class="active-dot"></span> 977 Playing</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Featured Games -->
+  <section class="section">
+    <div class="reveal">
+      <div class="section-label">Featured Games</div>
+      <h2 class="section-title">FEATURED <span class="highlight">GAMES</span></h2>
+      <p class="section-subtitle">Highlights from our universe.</p>
+    </div>
+
+    <div class="featured-grid reveal-stagger">
+      <div class="game-card reveal">
+        <img src="thumb1.png" alt="Game 1" class="game-thumb">
+        <div class="game-badge">&#128081; #1 Most Played</div>
+        <div class="game-overlay">
+          <div class="game-name">Moon Incremental</div>
+          <div class="game-stats">
+            <span class="game-stat-item"><span class="active-dot"></span> 1.7k Active Players</span>
+            <span class="sep">|</span>
+            <span class="game-stat-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 1M</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal">
+        <img src="thumb2.png" alt="Game 2" class="game-thumb">
+        <div class="game-overlay">
+          <div class="game-name">Stadium Simulator 2</div>
+          <div class="game-stats">
+            <span class="game-stat-item"><span class="active-dot"></span> 332 Active Players</span>
+            <span class="sep">|</span>
+            <span class="game-stat-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 1.7M</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal">
+        <img src="thumb3.png" alt="Game 3" class="game-thumb">
+        <div class="game-overlay">
+          <div class="game-name">Train Race</div>
+          <div class="game-stats">
+            <span class="game-stat-item"><span class="active-dot"></span> 120 Active Players</span>
+            <span class="sep">|</span>
+            <span class="game-stat-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 100k</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal">
+        <img src="thumb4.png" alt="Game 4" class="game-thumb">
+        <div class="game-overlay">
+          <div class="game-name">Production Tycoon</div>
+          <div class="game-stats">
+            <span class="game-stat-item"><span class="active-dot"></span> 41 Active Players</span>
+            <span class="sep">|</span>
+            <span class="game-stat-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 93k</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal">
+        <img src="thumb5.png" alt="Game 5" class="game-thumb">
+        <div class="game-overlay">
+          <div class="game-name">Cart Ride RNG</div>
+          <div class="game-stats">
+            <span class="game-stat-item"><span class="active-dot"></span> 38 Active Players</span>
+            <span class="sep">|</span>
+            <span class="game-stat-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> 3.2M</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Who We Are -->
+  <section class="section">
+    <div class="reveal">
+      <div class="section-label">Who We Are</div>
+      <h2 class="section-title">BUILT DIFFERENT. <span class="highlight">PLAYS LOUD.</span></h2>
+      <p class="section-subtitle">We're a game studio obsessed with creating experiences that break the mould and bring people together.</p>
+    </div>
+
+    <div class="about-cards reveal-stagger">
+      <div class="glass-card reveal">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Viral by Design</h3>
+        <p>Every game we build is engineered for virality. We study what makes players share, come back, and bring their friends. It's not luck — it's science.</p>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Community First</h3>
+        <p>Our players aren't just users — they're our co-creators. We build with the community, listen to feedback, and iterate at the speed of fun.</p>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3>Fun is Non-Negotiable</h3>
+        <p>We don't ship unless it's fun. Every mechanic, animation, and sound effect is playtested until it sparks joy. No compromises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Redwood Studios">
+      <span>Redwood Studios</span>
+    </div>
+    <p class="footer-copy">&copy; 2026 Redwood Studios. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="games.html">Games</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
